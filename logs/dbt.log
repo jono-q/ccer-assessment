@@ -1,0 +1,2754 @@
+
+
+============================== 2023-01-26 21:40:57.955994 | 57e0159d-f1bf-4699-9369-9de37033a5b5 ==============================
+[0m21:40:57.956000 [info ] [MainThread]: Running with dbt=1.3.1
+[0m21:40:57.956202 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m21:40:57.956267 [debug] [MainThread]: Tracking: tracking
+[0m21:40:57.973135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067f4d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107023130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107023400>]}
+[0m21:40:58.069883 [debug] [MainThread]: Executing "git --help"
+[0m21:40:58.087275 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:40:58.088165 [debug] [MainThread]: STDERR: "b''"
+[0m21:40:58.104175 [debug] [MainThread]: Acquiring new postgres connection "debug"
+[0m21:40:58.104625 [debug] [MainThread]: Using postgres connection "debug"
+[0m21:40:58.104710 [debug] [MainThread]: On debug: select 1 as id
+[0m21:40:58.104809 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:40:58.216345 [debug] [MainThread]: SQL status: SELECT 1 in 0.11 seconds
+[0m21:40:58.218364 [debug] [MainThread]: On debug: Close
+[0m21:40:58.218868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107232040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070fb460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070fb6a0>]}
+[0m21:40:58.219203 [debug] [MainThread]: Flushing usage events
+[0m21:40:58.634169 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-01-26 21:41:25.371579 | 8ba6594c-e021-499c-8787-a6efcea77635 ==============================
+[0m21:41:25.371585 [info ] [MainThread]: Running with dbt=1.3.1
+[0m21:41:25.371905 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m21:41:25.371972 [debug] [MainThread]: Tracking: tracking
+[0m21:41:25.397228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a07d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a28220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a281c0>]}
+[0m21:41:25.418132 [debug] [MainThread]: Executing "git --help"
+[0m21:41:25.428125 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:41:25.428659 [debug] [MainThread]: STDERR: "b''"
+[0m21:41:25.429080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068f3dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a8a5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a8a550>]}
+[0m21:41:25.429492 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-26 21:47:17.010184 | ef730655-9ba6-4d13-bd95-68cb4a0981af ==============================
+[0m21:47:17.010189 [info ] [MainThread]: Running with dbt=1.3.1
+[0m21:47:17.010552 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m21:47:17.010616 [debug] [MainThread]: Tracking: tracking
+[0m21:47:17.031455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045afdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045affd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045afd60>]}
+[0m21:47:17.084526 [debug] [MainThread]: Executing "git --help"
+[0m21:47:17.096674 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:47:17.097066 [debug] [MainThread]: STDERR: "b''"
+[0m21:47:17.100562 [debug] [MainThread]: Acquiring new postgres connection "debug"
+[0m21:47:17.100988 [debug] [MainThread]: Using postgres connection "debug"
+[0m21:47:17.101075 [debug] [MainThread]: On debug: select 1 as id
+[0m21:47:17.101144 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:47:17.198102 [debug] [MainThread]: SQL status: SELECT 1 in 0.1 seconds
+[0m21:47:17.199698 [debug] [MainThread]: On debug: Close
+[0m21:47:17.200039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10482d2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104873190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048737f0>]}
+[0m21:47:17.200327 [debug] [MainThread]: Flushing usage events
+[0m21:47:17.562391 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-01-26 22:12:59.583027 | a5788dc3-6e15-4c14-b1eb-e42052fc8486 ==============================
+[0m22:12:59.583093 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:12:59.583667 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:12:59.583749 [debug] [MainThread]: Tracking: tracking
+[0m22:12:59.603773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e0b760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e0b880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e0b8b0>]}
+[0m22:12:59.614760 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m22:12:59.614949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a5788dc3-6e15-4c14-b1eb-e42052fc8486', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e2dbb0>]}
+[0m22:12:59.630515 [debug] [MainThread]: Parsing macros/timestamps.sql
+[0m22:12:59.633088 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m22:12:59.634252 [debug] [MainThread]: Parsing macros/relations.sql
+[0m22:12:59.634920 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m22:12:59.646589 [debug] [MainThread]: Parsing macros/materializations/incremental_strategies.sql
+[0m22:12:59.647109 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+[0m22:12:59.647867 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m22:12:59.648141 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m22:12:59.648798 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m22:12:59.651956 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m22:12:59.652165 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m22:12:59.652715 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m22:12:59.653175 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m22:12:59.654872 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m22:12:59.655884 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m22:12:59.656625 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m22:12:59.664388 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m22:12:59.670817 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m22:12:59.676762 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m22:12:59.678854 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m22:12:59.679674 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m22:12:59.680464 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m22:12:59.684087 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m22:12:59.691522 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m22:12:59.692199 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+[0m22:12:59.695243 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m22:12:59.700002 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m22:12:59.708050 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m22:12:59.710545 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m22:12:59.712097 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m22:12:59.714587 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m22:12:59.715144 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m22:12:59.716633 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m22:12:59.717613 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m22:12:59.720776 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m22:12:59.729395 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m22:12:59.730046 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m22:12:59.731126 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m22:12:59.731804 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m22:12:59.732194 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m22:12:59.732537 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m22:12:59.732830 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m22:12:59.733420 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m22:12:59.735923 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m22:12:59.739732 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m22:12:59.740092 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m22:12:59.740622 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m22:12:59.741038 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m22:12:59.741440 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m22:12:59.741984 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m22:12:59.742330 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m22:12:59.742776 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m22:12:59.743311 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m22:12:59.744332 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m22:12:59.744873 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m22:12:59.745338 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m22:12:59.745794 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m22:12:59.746234 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m22:12:59.746628 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m22:12:59.747096 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m22:12:59.747486 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m22:12:59.750471 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m22:12:59.750928 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m22:12:59.751327 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m22:12:59.752111 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m22:12:59.753089 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m22:12:59.753536 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m22:12:59.754184 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m22:12:59.754643 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m22:12:59.755572 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+[0m22:12:59.757017 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m22:12:59.758277 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m22:12:59.765034 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m22:12:59.765895 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m22:12:59.771971 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m22:12:59.773919 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m22:12:59.777115 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m22:12:59.781509 [debug] [MainThread]: Parsing macros/python_model/python.sql
+[0m22:12:59.784271 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m22:12:59.917663 [debug] [MainThread]: 1699: static parser successfully parsed schools.sql
+[0m22:12:59.940453 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ccer_demo.example
+
+[0m22:12:59.943354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a5788dc3-6e15-4c14-b1eb-e42052fc8486', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104fc5ac0>]}
+[0m22:12:59.947993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a5788dc3-6e15-4c14-b1eb-e42052fc8486', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e2d340>]}
+[0m22:12:59.948158 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m22:12:59.948275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a5788dc3-6e15-4c14-b1eb-e42052fc8486', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e32df0>]}
+[0m22:12:59.948854 [info ] [MainThread]: 
+[0m22:12:59.949191 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:12:59.949713 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer"
+[0m22:12:59.955443 [debug] [ThreadPool]: Using postgres connection "list_ccer"
+[0m22:12:59.955581 [debug] [ThreadPool]: On list_ccer: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:12:59.955644 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:13:00.151834 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.2 seconds
+[0m22:13:00.152598 [debug] [ThreadPool]: On list_ccer: Close
+[0m22:13:00.153382 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer_demo"
+[0m22:13:00.156501 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:13:00.156584 [debug] [ThreadPool]: On list_ccer_demo: BEGIN
+[0m22:13:00.156670 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:13:00.166995 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+[0m22:13:00.167071 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:13:00.167130 [debug] [ThreadPool]: On list_ccer_demo: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer_demo"} */
+select
+      'ccer' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'demo'
+    union all
+    select
+      'ccer' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'demo'
+  
+[0m22:13:00.194519 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.03 seconds
+[0m22:13:00.195458 [debug] [ThreadPool]: On list_ccer_demo: ROLLBACK
+[0m22:13:00.195759 [debug] [ThreadPool]: On list_ccer_demo: Close
+[0m22:13:00.198507 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:00.198660 [debug] [MainThread]: On master: BEGIN
+[0m22:13:00.198726 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:13:00.201985 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:13:00.202152 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:00.202219 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:13:00.229826 [debug] [MainThread]: SQL status: SELECT 0 in 0.03 seconds
+[0m22:13:00.230499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a5788dc3-6e15-4c14-b1eb-e42052fc8486', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105027eb0>]}
+[0m22:13:00.230654 [debug] [MainThread]: On master: ROLLBACK
+[0m22:13:00.230886 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:00.230949 [debug] [MainThread]: On master: BEGIN
+[0m22:13:00.231278 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:13:00.231343 [debug] [MainThread]: On master: COMMIT
+[0m22:13:00.231401 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:00.231452 [debug] [MainThread]: On master: COMMIT
+[0m22:13:00.231609 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:13:00.231677 [debug] [MainThread]: On master: Close
+[0m22:13:00.231935 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:13:00.232052 [info ] [MainThread]: 
+[0m22:13:00.234843 [debug] [Thread-1  ]: Began running node model.ccer_demo.schools
+[0m22:13:00.235029 [info ] [Thread-1  ]: 1 of 1 START sql view model demo.schools ....................................... [RUN]
+[0m22:13:00.235389 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.schools"
+[0m22:13:00.235467 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.schools
+[0m22:13:00.235537 [debug] [Thread-1  ]: Compiling model.ccer_demo.schools
+[0m22:13:00.236807 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.schools"
+[0m22:13:00.237386 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:13:00.237475 [debug] [Thread-1  ]: Began executing node model.ccer_demo.schools
+[0m22:13:00.263077 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.schools"
+[0m22:13:00.263683 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:13:00.263779 [debug] [Thread-1  ]: On model.ccer_demo.schools: BEGIN
+[0m22:13:00.263855 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:13:00.269341 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+[0m22:13:00.269530 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:13:00.269621 [debug] [Thread-1  ]: On model.ccer_demo.schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.schools"} */
+
+  create view "ccer"."demo"."schools__dbt_tmp" as (
+    with ccer_schools as (
+
+    select      *
+    from        raw_school_list
+),
+
+dim_schools as (
+
+    select      *
+    from        dim_schools
+
+    ),
+
+final as (
+
+    select      cs.school_code,
+                ds.school_name,
+                cs.district_code,
+                cs.elementary_school_flag,
+                cs.middle_school_flag,
+                cs.high_school_flag   
+    from        ccer_schools cs
+    inner join  dim_schools ds
+        on      cs.school_code = ds.school_code
+
+)
+
+select * from final
+  );
+[0m22:13:00.290259 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "raw_school_list" does not exist
+LINE 7:     from        raw_school_list
+                        ^
+
+[0m22:13:00.290523 [debug] [Thread-1  ]: On model.ccer_demo.schools: ROLLBACK
+[0m22:13:00.290840 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:13:00.290928 [debug] [Thread-1  ]: On model.ccer_demo.schools: Close
+[0m22:13:00.291301 [debug] [Thread-1  ]: Database Error in model schools (models/schools.sql)
+  relation "raw_school_list" does not exist
+  LINE 7:     from        raw_school_list
+                          ^
+  compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:13:00.291448 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a5788dc3-6e15-4c14-b1eb-e42052fc8486', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f672b0>]}
+[0m22:13:00.291665 [error] [Thread-1  ]: 1 of 1 ERROR creating sql view model demo.schools .............................. [[31mERROR[0m in 0.06s]
+[0m22:13:00.291884 [debug] [Thread-1  ]: Finished running node model.ccer_demo.schools
+[0m22:13:00.293064 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:13:00.293209 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:00.293279 [debug] [MainThread]: On master: BEGIN
+[0m22:13:00.293343 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:13:00.296533 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:13:00.296669 [debug] [MainThread]: On master: COMMIT
+[0m22:13:00.296724 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:00.296774 [debug] [MainThread]: On master: COMMIT
+[0m22:13:00.296878 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:13:00.296936 [debug] [MainThread]: On master: Close
+[0m22:13:00.297217 [info ] [MainThread]: 
+[0m22:13:00.297326 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.35 seconds (0.35s).
+[0m22:13:00.297424 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:13:00.297475 [debug] [MainThread]: Connection 'model.ccer_demo.schools' was properly closed.
+[0m22:13:00.301288 [info ] [MainThread]: 
+[0m22:13:00.301497 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m22:13:00.301669 [info ] [MainThread]: 
+[0m22:13:00.301816 [error] [MainThread]: [33mDatabase Error in model schools (models/schools.sql)[0m
+[0m22:13:00.301923 [error] [MainThread]:   relation "raw_school_list" does not exist
+[0m22:13:00.302014 [error] [MainThread]:   LINE 7:     from        raw_school_list
+[0m22:13:00.302096 [error] [MainThread]:                           ^
+[0m22:13:00.302177 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:13:00.302266 [info ] [MainThread]: 
+[0m22:13:00.302368 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m22:13:00.302515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105055640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105055cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105055dc0>]}
+[0m22:13:00.302636 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-26 22:13:41.369827 | be4c0436-8daf-48d4-804e-259985feb1f2 ==============================
+[0m22:13:41.369920 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:13:41.370445 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:13:41.370528 [debug] [MainThread]: Tracking: tracking
+[0m22:13:41.381259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106413910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106413a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106413a60>]}
+[0m22:13:41.416480 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:13:41.416742 [debug] [MainThread]: Partial parsing: updated file: ccer_demo://models/schools.sql
+[0m22:13:41.424052 [debug] [MainThread]: 1699: static parser successfully parsed schools.sql
+[0m22:13:41.435967 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ccer_demo.example
+
+[0m22:13:41.438608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'be4c0436-8daf-48d4-804e-259985feb1f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10667d0d0>]}
+[0m22:13:41.442438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'be4c0436-8daf-48d4-804e-259985feb1f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106605e50>]}
+[0m22:13:41.442642 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m22:13:41.442771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be4c0436-8daf-48d4-804e-259985feb1f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065f39d0>]}
+[0m22:13:41.443414 [info ] [MainThread]: 
+[0m22:13:41.443767 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:13:41.444270 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer"
+[0m22:13:41.449919 [debug] [ThreadPool]: Using postgres connection "list_ccer"
+[0m22:13:41.450035 [debug] [ThreadPool]: On list_ccer: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:13:41.450102 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:13:41.495423 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.05 seconds
+[0m22:13:41.496375 [debug] [ThreadPool]: On list_ccer: Close
+[0m22:13:41.497145 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer_demo"
+[0m22:13:41.500847 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:13:41.500970 [debug] [ThreadPool]: On list_ccer_demo: BEGIN
+[0m22:13:41.501067 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:13:41.504793 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m22:13:41.504889 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:13:41.504956 [debug] [ThreadPool]: On list_ccer_demo: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer_demo"} */
+select
+      'ccer' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'demo'
+    union all
+    select
+      'ccer' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'demo'
+  
+[0m22:13:41.514617 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+[0m22:13:41.515449 [debug] [ThreadPool]: On list_ccer_demo: ROLLBACK
+[0m22:13:41.515824 [debug] [ThreadPool]: On list_ccer_demo: Close
+[0m22:13:41.518792 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:41.518896 [debug] [MainThread]: On master: BEGIN
+[0m22:13:41.518968 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:13:41.522346 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:13:41.522432 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:41.522499 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:13:41.529267 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+[0m22:13:41.529866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be4c0436-8daf-48d4-804e-259985feb1f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10643a790>]}
+[0m22:13:41.530015 [debug] [MainThread]: On master: ROLLBACK
+[0m22:13:41.530223 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:41.530307 [debug] [MainThread]: On master: BEGIN
+[0m22:13:41.530577 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:13:41.530649 [debug] [MainThread]: On master: COMMIT
+[0m22:13:41.530713 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:41.530772 [debug] [MainThread]: On master: COMMIT
+[0m22:13:41.530901 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:13:41.530973 [debug] [MainThread]: On master: Close
+[0m22:13:41.531248 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:13:41.531382 [info ] [MainThread]: 
+[0m22:13:41.534989 [debug] [Thread-1  ]: Began running node model.ccer_demo.schools
+[0m22:13:41.535187 [info ] [Thread-1  ]: 1 of 1 START sql view model demo.schools ....................................... [RUN]
+[0m22:13:41.535684 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.schools"
+[0m22:13:41.535827 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.schools
+[0m22:13:41.535929 [debug] [Thread-1  ]: Compiling model.ccer_demo.schools
+[0m22:13:41.537371 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.schools"
+[0m22:13:41.537753 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:13:41.537849 [debug] [Thread-1  ]: Began executing node model.ccer_demo.schools
+[0m22:13:41.559704 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.schools"
+[0m22:13:41.560077 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:13:41.560145 [debug] [Thread-1  ]: On model.ccer_demo.schools: BEGIN
+[0m22:13:41.560201 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:13:41.563402 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:13:41.563537 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:13:41.563597 [debug] [Thread-1  ]: On model.ccer_demo.schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.schools"} */
+
+  create view "ccer"."demo"."schools__dbt_tmp" as (
+    with ccer_schools as (
+
+    select      *
+    from        demo.raw_school_list
+),
+
+dim_schools as (
+
+    select      *
+    from        demo.dim_schools
+
+    ),
+
+final as (
+
+    select      cs.school_code,
+                ds.school_name,
+                cs.district_code,
+                cs.elementary_school_flag,
+                cs.middle_school_flag,
+                cs.high_school_flag   
+    from        demo.ccer_schools cs
+    inner join  demo.dim_schools ds
+        on      cs.school_code = ds.school_code
+
+)
+
+select * from final
+  );
+[0m22:13:41.564498 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "demo.ccer_schools" does not exist
+LINE 25:     from        demo.ccer_schools cs
+                         ^
+
+[0m22:13:41.564573 [debug] [Thread-1  ]: On model.ccer_demo.schools: ROLLBACK
+[0m22:13:41.564763 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:13:41.564834 [debug] [Thread-1  ]: On model.ccer_demo.schools: Close
+[0m22:13:41.565158 [debug] [Thread-1  ]: Database Error in model schools (models/schools.sql)
+  relation "demo.ccer_schools" does not exist
+  LINE 25:     from        demo.ccer_schools cs
+                           ^
+  compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:13:41.565297 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'be4c0436-8daf-48d4-804e-259985feb1f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066d7eb0>]}
+[0m22:13:41.565486 [error] [Thread-1  ]: 1 of 1 ERROR creating sql view model demo.schools .............................. [[31mERROR[0m in 0.03s]
+[0m22:13:41.565698 [debug] [Thread-1  ]: Finished running node model.ccer_demo.schools
+[0m22:13:41.566478 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:13:41.566578 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:41.566636 [debug] [MainThread]: On master: BEGIN
+[0m22:13:41.566701 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:13:41.569584 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:13:41.569716 [debug] [MainThread]: On master: COMMIT
+[0m22:13:41.569784 [debug] [MainThread]: Using postgres connection "master"
+[0m22:13:41.569838 [debug] [MainThread]: On master: COMMIT
+[0m22:13:41.569966 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:13:41.570030 [debug] [MainThread]: On master: Close
+[0m22:13:41.570324 [info ] [MainThread]: 
+[0m22:13:41.570439 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.13 seconds (0.13s).
+[0m22:13:41.570543 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:13:41.570597 [debug] [MainThread]: Connection 'model.ccer_demo.schools' was properly closed.
+[0m22:13:41.574329 [info ] [MainThread]: 
+[0m22:13:41.574552 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m22:13:41.574677 [info ] [MainThread]: 
+[0m22:13:41.574776 [error] [MainThread]: [33mDatabase Error in model schools (models/schools.sql)[0m
+[0m22:13:41.574874 [error] [MainThread]:   relation "demo.ccer_schools" does not exist
+[0m22:13:41.574962 [error] [MainThread]:   LINE 25:     from        demo.ccer_schools cs
+[0m22:13:41.575048 [error] [MainThread]:                            ^
+[0m22:13:41.575135 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:13:41.575230 [info ] [MainThread]: 
+[0m22:13:41.575323 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m22:13:41.575780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10643beb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106605b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066d73d0>]}
+[0m22:13:41.575958 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-26 22:18:29.995631 | 7b5973ac-e5cf-472c-8e62-93ad0ca24ec0 ==============================
+[0m22:18:29.995674 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:18:29.996374 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:18:29.996589 [debug] [MainThread]: Tracking: tracking
+[0m22:18:30.006705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b3b670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b3b790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b3b7c0>]}
+[0m22:18:30.049712 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m22:18:30.050000 [debug] [MainThread]: Partial parsing: added file: ccer_demo://models/staging/ccer_schools.sql
+[0m22:18:30.057827 [debug] [MainThread]: 1699: static parser successfully parsed staging/ccer_schools.sql
+[0m22:18:30.070146 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ccer_demo.example
+
+[0m22:18:30.072937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7b5973ac-e5cf-472c-8e62-93ad0ca24ec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106da70d0>]}
+[0m22:18:30.076958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7b5973ac-e5cf-472c-8e62-93ad0ca24ec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d2ebe0>]}
+[0m22:18:30.077286 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m22:18:30.077435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b5973ac-e5cf-472c-8e62-93ad0ca24ec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d2ecd0>]}
+[0m22:18:30.078184 [info ] [MainThread]: 
+[0m22:18:30.078546 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:18:30.079048 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer"
+[0m22:18:30.084667 [debug] [ThreadPool]: Using postgres connection "list_ccer"
+[0m22:18:30.084762 [debug] [ThreadPool]: On list_ccer: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:18:30.084824 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:18:30.129814 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.04 seconds
+[0m22:18:30.130714 [debug] [ThreadPool]: On list_ccer: Close
+[0m22:18:30.131459 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer_demo"
+[0m22:18:30.134945 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:18:30.135047 [debug] [ThreadPool]: On list_ccer_demo: BEGIN
+[0m22:18:30.135121 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:18:30.139066 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m22:18:30.139152 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:18:30.139221 [debug] [ThreadPool]: On list_ccer_demo: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer_demo"} */
+select
+      'ccer' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'demo'
+    union all
+    select
+      'ccer' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'demo'
+  
+[0m22:18:30.170585 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.03 seconds
+[0m22:18:30.171538 [debug] [ThreadPool]: On list_ccer_demo: ROLLBACK
+[0m22:18:30.171809 [debug] [ThreadPool]: On list_ccer_demo: Close
+[0m22:18:30.174889 [debug] [MainThread]: Using postgres connection "master"
+[0m22:18:30.175041 [debug] [MainThread]: On master: BEGIN
+[0m22:18:30.175115 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:18:30.178466 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:18:30.178608 [debug] [MainThread]: Using postgres connection "master"
+[0m22:18:30.178676 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:18:30.205476 [debug] [MainThread]: SQL status: SELECT 0 in 0.03 seconds
+[0m22:18:30.206153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b5973ac-e5cf-472c-8e62-93ad0ca24ec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b64a00>]}
+[0m22:18:30.206335 [debug] [MainThread]: On master: ROLLBACK
+[0m22:18:30.206625 [debug] [MainThread]: Using postgres connection "master"
+[0m22:18:30.206690 [debug] [MainThread]: On master: BEGIN
+[0m22:18:30.207094 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:18:30.207156 [debug] [MainThread]: On master: COMMIT
+[0m22:18:30.207214 [debug] [MainThread]: Using postgres connection "master"
+[0m22:18:30.207260 [debug] [MainThread]: On master: COMMIT
+[0m22:18:30.207442 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:18:30.207503 [debug] [MainThread]: On master: Close
+[0m22:18:30.207776 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:18:30.207888 [info ] [MainThread]: 
+[0m22:18:30.210455 [debug] [Thread-1  ]: Began running node model.ccer_demo.ccer_schools
+[0m22:18:30.210675 [info ] [Thread-1  ]: 1 of 2 START sql view model demo.ccer_schools .................................. [RUN]
+[0m22:18:30.211069 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.ccer_schools"
+[0m22:18:30.211152 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.ccer_schools
+[0m22:18:30.211230 [debug] [Thread-1  ]: Compiling model.ccer_demo.ccer_schools
+[0m22:18:30.212322 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.ccer_schools"
+[0m22:18:30.212744 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:18:30.212836 [debug] [Thread-1  ]: Began executing node model.ccer_demo.ccer_schools
+[0m22:18:30.233864 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.ccer_schools"
+[0m22:18:30.234357 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:18:30.234431 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: BEGIN
+[0m22:18:30.234489 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:18:30.237722 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:18:30.237856 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:18:30.237917 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.ccer_schools"} */
+
+  create view "ccer"."demo"."ccer_schools__dbt_tmp" as (
+    with raw_school_list as (
+    select      *
+    from        raw_school_list
+)
+
+select * from raw_school_list
+  );
+[0m22:18:30.238217 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "raw_school_list" does not exist
+LINE 6:     from        raw_school_list
+                        ^
+DETAIL:  There is a WITH item named "raw_school_list", but it cannot be referenced from this part of the query.
+HINT:  Use WITH RECURSIVE, or re-order the WITH items to remove forward references.
+
+[0m22:18:30.238293 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: ROLLBACK
+[0m22:18:30.238456 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:18:30.238520 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: Close
+[0m22:18:30.238799 [debug] [Thread-1  ]: Database Error in model ccer_schools (models/staging/ccer_schools.sql)
+  relation "raw_school_list" does not exist
+  LINE 6:     from        raw_school_list
+                          ^
+  DETAIL:  There is a WITH item named "raw_school_list", but it cannot be referenced from this part of the query.
+  HINT:  Use WITH RECURSIVE, or re-order the WITH items to remove forward references.
+  compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:18:30.238921 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7b5973ac-e5cf-472c-8e62-93ad0ca24ec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e00fd0>]}
+[0m22:18:30.239092 [error] [Thread-1  ]: 1 of 2 ERROR creating sql view model demo.ccer_schools ......................... [[31mERROR[0m in 0.03s]
+[0m22:18:30.239288 [debug] [Thread-1  ]: Finished running node model.ccer_demo.ccer_schools
+[0m22:18:30.239380 [debug] [Thread-1  ]: Began running node model.ccer_demo.schools
+[0m22:18:30.239552 [info ] [Thread-1  ]: 2 of 2 START sql view model demo.schools ....................................... [RUN]
+[0m22:18:30.239848 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.schools"
+[0m22:18:30.239915 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.schools
+[0m22:18:30.239979 [debug] [Thread-1  ]: Compiling model.ccer_demo.schools
+[0m22:18:30.240972 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.schools"
+[0m22:18:30.241226 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:18:30.241295 [debug] [Thread-1  ]: Began executing node model.ccer_demo.schools
+[0m22:18:30.243426 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.schools"
+[0m22:18:30.243771 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:18:30.243843 [debug] [Thread-1  ]: On model.ccer_demo.schools: BEGIN
+[0m22:18:30.243895 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:18:30.247507 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:18:30.247644 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:18:30.247702 [debug] [Thread-1  ]: On model.ccer_demo.schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.schools"} */
+
+  create view "ccer"."demo"."schools__dbt_tmp" as (
+    with ccer_schools as (
+
+    select      *
+    from        demo.raw_school_list
+),
+
+dim_schools as (
+
+    select      *
+    from        demo.dim_schools
+
+    ),
+
+final as (
+
+    select      cs.school_code,
+                ds.school_name,
+                cs.district_code,
+                cs.elementary_school_flag,
+                cs.middle_school_flag,
+                cs.high_school_flag   
+    from        demo.ccer_schools cs
+    inner join  demo.dim_schools ds
+        on      cs.school_code = ds.school_code
+
+)
+
+select * from final
+  );
+[0m22:18:30.248135 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "demo.ccer_schools" does not exist
+LINE 25:     from        demo.ccer_schools cs
+                         ^
+
+[0m22:18:30.248210 [debug] [Thread-1  ]: On model.ccer_demo.schools: ROLLBACK
+[0m22:18:30.248374 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:18:30.248433 [debug] [Thread-1  ]: On model.ccer_demo.schools: Close
+[0m22:18:30.248682 [debug] [Thread-1  ]: Database Error in model schools (models/schools.sql)
+  relation "demo.ccer_schools" does not exist
+  LINE 25:     from        demo.ccer_schools cs
+                           ^
+  compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:18:30.248802 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7b5973ac-e5cf-472c-8e62-93ad0ca24ec0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e00b80>]}
+[0m22:18:30.248952 [error] [Thread-1  ]: 2 of 2 ERROR creating sql view model demo.schools .............................. [[31mERROR[0m in 0.01s]
+[0m22:18:30.249113 [debug] [Thread-1  ]: Finished running node model.ccer_demo.schools
+[0m22:18:30.249719 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:18:30.249799 [debug] [MainThread]: Using postgres connection "master"
+[0m22:18:30.249853 [debug] [MainThread]: On master: BEGIN
+[0m22:18:30.249905 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:18:30.252932 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:18:30.253004 [debug] [MainThread]: On master: COMMIT
+[0m22:18:30.253060 [debug] [MainThread]: Using postgres connection "master"
+[0m22:18:30.253112 [debug] [MainThread]: On master: COMMIT
+[0m22:18:30.253241 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:18:30.253302 [debug] [MainThread]: On master: Close
+[0m22:18:30.253546 [info ] [MainThread]: 
+[0m22:18:30.253666 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.18 seconds (0.18s).
+[0m22:18:30.253771 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:18:30.253825 [debug] [MainThread]: Connection 'model.ccer_demo.schools' was properly closed.
+[0m22:18:30.281285 [info ] [MainThread]: 
+[0m22:18:30.281445 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m22:18:30.281554 [info ] [MainThread]: 
+[0m22:18:30.281643 [error] [MainThread]: [33mDatabase Error in model ccer_schools (models/staging/ccer_schools.sql)[0m
+[0m22:18:30.281732 [error] [MainThread]:   relation "raw_school_list" does not exist
+[0m22:18:30.281813 [error] [MainThread]:   LINE 6:     from        raw_school_list
+[0m22:18:30.281894 [error] [MainThread]:                           ^
+[0m22:18:30.281976 [error] [MainThread]:   DETAIL:  There is a WITH item named "raw_school_list", but it cannot be referenced from this part of the query.
+[0m22:18:30.282056 [error] [MainThread]:   HINT:  Use WITH RECURSIVE, or re-order the WITH items to remove forward references.
+[0m22:18:30.282137 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:18:30.282288 [info ] [MainThread]: 
+[0m22:18:30.282385 [error] [MainThread]: [33mDatabase Error in model schools (models/schools.sql)[0m
+[0m22:18:30.282475 [error] [MainThread]:   relation "demo.ccer_schools" does not exist
+[0m22:18:30.282558 [error] [MainThread]:   LINE 25:     from        demo.ccer_schools cs
+[0m22:18:30.282640 [error] [MainThread]:                            ^
+[0m22:18:30.282722 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:18:30.282914 [info ] [MainThread]: 
+[0m22:18:30.283029 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m22:18:30.283186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bc5c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b8f310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069d1a90>]}
+[0m22:18:30.283314 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-26 22:19:16.978425 | 79dec667-aa08-4834-b589-52471cbe43c7 ==============================
+[0m22:19:16.978510 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:19:16.979329 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:19:16.979447 [debug] [MainThread]: Tracking: tracking
+[0m22:19:17.013080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ecf6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ecf7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ecf820>]}
+[0m22:19:17.046318 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:19:17.046538 [debug] [MainThread]: Partial parsing: updated file: ccer_demo://models/staging/ccer_schools.sql
+[0m22:19:17.054631 [debug] [MainThread]: 1699: static parser successfully parsed staging/ccer_schools.sql
+[0m22:19:17.066558 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ccer_demo.example
+
+[0m22:19:17.069194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '79dec667-aa08-4834-b589-52471cbe43c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10913e0d0>]}
+[0m22:19:17.072540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '79dec667-aa08-4834-b589-52471cbe43c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090c3f70>]}
+[0m22:19:17.072720 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m22:19:17.072840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79dec667-aa08-4834-b589-52471cbe43c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090c3fd0>]}
+[0m22:19:17.073660 [info ] [MainThread]: 
+[0m22:19:17.074254 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:19:17.074888 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer"
+[0m22:19:17.081039 [debug] [ThreadPool]: Using postgres connection "list_ccer"
+[0m22:19:17.081192 [debug] [ThreadPool]: On list_ccer: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:19:17.081256 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:19:17.137247 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.06 seconds
+[0m22:19:17.138355 [debug] [ThreadPool]: On list_ccer: Close
+[0m22:19:17.139256 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer_demo"
+[0m22:19:17.143413 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:19:17.143590 [debug] [ThreadPool]: On list_ccer_demo: BEGIN
+[0m22:19:17.143664 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:19:17.157861 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+[0m22:19:17.158054 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:19:17.158126 [debug] [ThreadPool]: On list_ccer_demo: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer_demo"} */
+select
+      'ccer' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'demo'
+    union all
+    select
+      'ccer' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'demo'
+  
+[0m22:19:17.164622 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+[0m22:19:17.165397 [debug] [ThreadPool]: On list_ccer_demo: ROLLBACK
+[0m22:19:17.165652 [debug] [ThreadPool]: On list_ccer_demo: Close
+[0m22:19:17.168397 [debug] [MainThread]: Using postgres connection "master"
+[0m22:19:17.168500 [debug] [MainThread]: On master: BEGIN
+[0m22:19:17.168565 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:19:17.172215 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:19:17.172289 [debug] [MainThread]: Using postgres connection "master"
+[0m22:19:17.172347 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:19:17.183139 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+[0m22:19:17.184000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79dec667-aa08-4834-b589-52471cbe43c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ef5250>]}
+[0m22:19:17.184201 [debug] [MainThread]: On master: ROLLBACK
+[0m22:19:17.184475 [debug] [MainThread]: Using postgres connection "master"
+[0m22:19:17.184552 [debug] [MainThread]: On master: BEGIN
+[0m22:19:17.184923 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:19:17.184998 [debug] [MainThread]: On master: COMMIT
+[0m22:19:17.185069 [debug] [MainThread]: Using postgres connection "master"
+[0m22:19:17.185128 [debug] [MainThread]: On master: COMMIT
+[0m22:19:17.185313 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:19:17.185387 [debug] [MainThread]: On master: Close
+[0m22:19:17.185719 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:19:17.185859 [info ] [MainThread]: 
+[0m22:19:17.189423 [debug] [Thread-1  ]: Began running node model.ccer_demo.ccer_schools
+[0m22:19:17.189663 [info ] [Thread-1  ]: 1 of 2 START sql view model demo.ccer_schools .................................. [RUN]
+[0m22:19:17.190098 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.ccer_schools"
+[0m22:19:17.190190 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.ccer_schools
+[0m22:19:17.190281 [debug] [Thread-1  ]: Compiling model.ccer_demo.ccer_schools
+[0m22:19:17.191546 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.ccer_schools"
+[0m22:19:17.191925 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:19:17.192023 [debug] [Thread-1  ]: Began executing node model.ccer_demo.ccer_schools
+[0m22:19:17.215457 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.ccer_schools"
+[0m22:19:17.215895 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:19:17.215967 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: BEGIN
+[0m22:19:17.216025 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:19:17.219466 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:19:17.219619 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:19:17.219681 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.ccer_schools"} */
+
+  create view "ccer"."demo"."ccer_schools__dbt_tmp" as (
+    with source as (
+    select      *
+    from        raw_school_list
+)
+
+select * from source
+  );
+[0m22:19:17.220018 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "raw_school_list" does not exist
+LINE 6:     from        raw_school_list
+                        ^
+
+[0m22:19:17.220090 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: ROLLBACK
+[0m22:19:17.220280 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:19:17.220377 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: Close
+[0m22:19:17.220695 [debug] [Thread-1  ]: Database Error in model ccer_schools (models/staging/ccer_schools.sql)
+  relation "raw_school_list" does not exist
+  LINE 6:     from        raw_school_list
+                          ^
+  compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:19:17.220828 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79dec667-aa08-4834-b589-52471cbe43c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091df0a0>]}
+[0m22:19:17.221018 [error] [Thread-1  ]: 1 of 2 ERROR creating sql view model demo.ccer_schools ......................... [[31mERROR[0m in 0.03s]
+[0m22:19:17.221233 [debug] [Thread-1  ]: Finished running node model.ccer_demo.ccer_schools
+[0m22:19:17.221328 [debug] [Thread-1  ]: Began running node model.ccer_demo.schools
+[0m22:19:17.221508 [info ] [Thread-1  ]: 2 of 2 START sql view model demo.schools ....................................... [RUN]
+[0m22:19:17.221826 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.schools"
+[0m22:19:17.221896 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.schools
+[0m22:19:17.221962 [debug] [Thread-1  ]: Compiling model.ccer_demo.schools
+[0m22:19:17.223119 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.schools"
+[0m22:19:17.223413 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:19:17.223491 [debug] [Thread-1  ]: Began executing node model.ccer_demo.schools
+[0m22:19:17.226253 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.schools"
+[0m22:19:17.226738 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:19:17.226889 [debug] [Thread-1  ]: On model.ccer_demo.schools: BEGIN
+[0m22:19:17.226954 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:19:17.231557 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:19:17.231739 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:19:17.231801 [debug] [Thread-1  ]: On model.ccer_demo.schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.schools"} */
+
+  create view "ccer"."demo"."schools__dbt_tmp" as (
+    with ccer_schools as (
+
+    select      *
+    from        demo.raw_school_list
+),
+
+dim_schools as (
+
+    select      *
+    from        demo.dim_schools
+
+    ),
+
+final as (
+
+    select      cs.school_code,
+                ds.school_name,
+                cs.district_code,
+                cs.elementary_school_flag,
+                cs.middle_school_flag,
+                cs.high_school_flag   
+    from        demo.ccer_schools cs
+    inner join  demo.dim_schools ds
+        on      cs.school_code = ds.school_code
+
+)
+
+select * from final
+  );
+[0m22:19:17.232296 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "demo.ccer_schools" does not exist
+LINE 25:     from        demo.ccer_schools cs
+                         ^
+
+[0m22:19:17.232381 [debug] [Thread-1  ]: On model.ccer_demo.schools: ROLLBACK
+[0m22:19:17.232550 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:19:17.232615 [debug] [Thread-1  ]: On model.ccer_demo.schools: Close
+[0m22:19:17.232889 [debug] [Thread-1  ]: Database Error in model schools (models/schools.sql)
+  relation "demo.ccer_schools" does not exist
+  LINE 25:     from        demo.ccer_schools cs
+                           ^
+  compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:19:17.233011 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79dec667-aa08-4834-b589-52471cbe43c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091df040>]}
+[0m22:19:17.233196 [error] [Thread-1  ]: 2 of 2 ERROR creating sql view model demo.schools .............................. [[31mERROR[0m in 0.01s]
+[0m22:19:17.233395 [debug] [Thread-1  ]: Finished running node model.ccer_demo.schools
+[0m22:19:17.234203 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:19:17.234301 [debug] [MainThread]: Using postgres connection "master"
+[0m22:19:17.234357 [debug] [MainThread]: On master: BEGIN
+[0m22:19:17.234407 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:19:17.237486 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:19:17.237675 [debug] [MainThread]: On master: COMMIT
+[0m22:19:17.237751 [debug] [MainThread]: Using postgres connection "master"
+[0m22:19:17.237816 [debug] [MainThread]: On master: COMMIT
+[0m22:19:17.237942 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:19:17.238027 [debug] [MainThread]: On master: Close
+[0m22:19:17.238349 [info ] [MainThread]: 
+[0m22:19:17.238467 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.16 seconds (0.16s).
+[0m22:19:17.238564 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:19:17.238614 [debug] [MainThread]: Connection 'model.ccer_demo.schools' was properly closed.
+[0m22:19:17.275597 [info ] [MainThread]: 
+[0m22:19:17.275783 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m22:19:17.275899 [info ] [MainThread]: 
+[0m22:19:17.275988 [error] [MainThread]: [33mDatabase Error in model ccer_schools (models/staging/ccer_schools.sql)[0m
+[0m22:19:17.276078 [error] [MainThread]:   relation "raw_school_list" does not exist
+[0m22:19:17.276159 [error] [MainThread]:   LINE 6:     from        raw_school_list
+[0m22:19:17.276240 [error] [MainThread]:                           ^
+[0m22:19:17.276320 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:19:17.276416 [info ] [MainThread]: 
+[0m22:19:17.276544 [error] [MainThread]: [33mDatabase Error in model schools (models/schools.sql)[0m
+[0m22:19:17.276639 [error] [MainThread]:   relation "demo.ccer_schools" does not exist
+[0m22:19:17.276722 [error] [MainThread]:   LINE 25:     from        demo.ccer_schools cs
+[0m22:19:17.276805 [error] [MainThread]:                            ^
+[0m22:19:17.276886 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:19:17.276972 [info ] [MainThread]: 
+[0m22:19:17.277058 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m22:19:17.277209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f70dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f38e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d6c730>]}
+[0m22:19:17.277331 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-26 22:20:15.803351 | b040df95-9436-4627-9398-0fa8b3124025 ==============================
+[0m22:20:15.803375 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:20:15.803876 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:20:15.803970 [debug] [MainThread]: Tracking: tracking
+[0m22:20:15.817529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060a1790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060a18b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060a18e0>]}
+[0m22:20:15.865532 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:20:15.865842 [debug] [MainThread]: Partial parsing: updated file: ccer_demo://models/staging/ccer_schools.sql
+[0m22:20:15.875590 [debug] [MainThread]: 1699: static parser successfully parsed staging/ccer_schools.sql
+[0m22:20:15.888961 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ccer_demo.example
+
+[0m22:20:15.891951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b040df95-9436-4627-9398-0fa8b3124025', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10630e0d0>]}
+[0m22:20:15.895075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b040df95-9436-4627-9398-0fa8b3124025', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106293f70>]}
+[0m22:20:15.895220 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m22:20:15.895339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b040df95-9436-4627-9398-0fa8b3124025', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106293fd0>]}
+[0m22:20:15.896057 [info ] [MainThread]: 
+[0m22:20:15.896442 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:20:15.896962 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer"
+[0m22:20:15.902662 [debug] [ThreadPool]: Using postgres connection "list_ccer"
+[0m22:20:15.902851 [debug] [ThreadPool]: On list_ccer: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:20:15.902918 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:20:16.032398 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.13 seconds
+[0m22:20:16.033388 [debug] [ThreadPool]: On list_ccer: Close
+[0m22:20:16.034161 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer_demo"
+[0m22:20:16.037664 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:20:16.037764 [debug] [ThreadPool]: On list_ccer_demo: BEGIN
+[0m22:20:16.037834 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:20:16.045714 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+[0m22:20:16.045895 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:20:16.045966 [debug] [ThreadPool]: On list_ccer_demo: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer_demo"} */
+select
+      'ccer' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'demo'
+    union all
+    select
+      'ccer' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'demo'
+  
+[0m22:20:16.057813 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+[0m22:20:16.058786 [debug] [ThreadPool]: On list_ccer_demo: ROLLBACK
+[0m22:20:16.059093 [debug] [ThreadPool]: On list_ccer_demo: Close
+[0m22:20:16.062260 [debug] [MainThread]: Using postgres connection "master"
+[0m22:20:16.062432 [debug] [MainThread]: On master: BEGIN
+[0m22:20:16.062511 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:20:16.065997 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:20:16.066144 [debug] [MainThread]: Using postgres connection "master"
+[0m22:20:16.066217 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:20:16.083542 [debug] [MainThread]: SQL status: SELECT 0 in 0.02 seconds
+[0m22:20:16.084355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b040df95-9436-4627-9398-0fa8b3124025', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106293ca0>]}
+[0m22:20:16.084566 [debug] [MainThread]: On master: ROLLBACK
+[0m22:20:16.084849 [debug] [MainThread]: Using postgres connection "master"
+[0m22:20:16.084933 [debug] [MainThread]: On master: BEGIN
+[0m22:20:16.085357 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:20:16.085444 [debug] [MainThread]: On master: COMMIT
+[0m22:20:16.085519 [debug] [MainThread]: Using postgres connection "master"
+[0m22:20:16.085585 [debug] [MainThread]: On master: COMMIT
+[0m22:20:16.085783 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:20:16.085871 [debug] [MainThread]: On master: Close
+[0m22:20:16.086211 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:20:16.086361 [info ] [MainThread]: 
+[0m22:20:16.089008 [debug] [Thread-1  ]: Began running node model.ccer_demo.ccer_schools
+[0m22:20:16.089243 [info ] [Thread-1  ]: 1 of 2 START sql view model demo.ccer_schools .................................. [RUN]
+[0m22:20:16.089677 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.ccer_schools"
+[0m22:20:16.089775 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.ccer_schools
+[0m22:20:16.089869 [debug] [Thread-1  ]: Compiling model.ccer_demo.ccer_schools
+[0m22:20:16.091581 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.ccer_schools"
+[0m22:20:16.091913 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:20:16.092003 [debug] [Thread-1  ]: Began executing node model.ccer_demo.ccer_schools
+[0m22:20:16.113861 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.ccer_schools"
+[0m22:20:16.114218 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:20:16.114297 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: BEGIN
+[0m22:20:16.114358 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:20:16.120039 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+[0m22:20:16.120137 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:20:16.120208 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.ccer_schools"} */
+
+  create view "ccer"."demo"."ccer_schools__dbt_tmp" as (
+    with source as (
+    select      *
+    from        ref raw_school_list
+)
+
+select * from source
+  );
+[0m22:20:16.120754 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "ref" does not exist
+LINE 6:     from        ref raw_school_list
+                        ^
+
+[0m22:20:16.120858 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: ROLLBACK
+[0m22:20:16.121117 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:20:16.121196 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: Close
+[0m22:20:16.121511 [debug] [Thread-1  ]: Database Error in model ccer_schools (models/staging/ccer_schools.sql)
+  relation "ref" does not exist
+  LINE 6:     from        ref raw_school_list
+                          ^
+  compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:20:16.121667 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b040df95-9436-4627-9398-0fa8b3124025', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063af160>]}
+[0m22:20:16.121866 [error] [Thread-1  ]: 1 of 2 ERROR creating sql view model demo.ccer_schools ......................... [[31mERROR[0m in 0.03s]
+[0m22:20:16.122108 [debug] [Thread-1  ]: Finished running node model.ccer_demo.ccer_schools
+[0m22:20:16.122227 [debug] [Thread-1  ]: Began running node model.ccer_demo.schools
+[0m22:20:16.122486 [info ] [Thread-1  ]: 2 of 2 START sql view model demo.schools ....................................... [RUN]
+[0m22:20:16.122856 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.schools"
+[0m22:20:16.122938 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.schools
+[0m22:20:16.123010 [debug] [Thread-1  ]: Compiling model.ccer_demo.schools
+[0m22:20:16.123999 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.schools"
+[0m22:20:16.124217 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:20:16.124287 [debug] [Thread-1  ]: Began executing node model.ccer_demo.schools
+[0m22:20:16.126492 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.schools"
+[0m22:20:16.126689 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:20:16.126755 [debug] [Thread-1  ]: On model.ccer_demo.schools: BEGIN
+[0m22:20:16.126812 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:20:16.129922 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:20:16.130005 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:20:16.130068 [debug] [Thread-1  ]: On model.ccer_demo.schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.schools"} */
+
+  create view "ccer"."demo"."schools__dbt_tmp" as (
+    with ccer_schools as (
+
+    select      *
+    from        demo.raw_school_list
+),
+
+dim_schools as (
+
+    select      *
+    from        demo.dim_schools
+
+    ),
+
+final as (
+
+    select      cs.school_code,
+                ds.school_name,
+                cs.district_code,
+                cs.elementary_school_flag,
+                cs.middle_school_flag,
+                cs.high_school_flag   
+    from        demo.ccer_schools cs
+    inner join  demo.dim_schools ds
+        on      cs.school_code = ds.school_code
+
+)
+
+select * from final
+  );
+[0m22:20:16.131340 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "demo.ccer_schools" does not exist
+LINE 25:     from        demo.ccer_schools cs
+                         ^
+
+[0m22:20:16.131410 [debug] [Thread-1  ]: On model.ccer_demo.schools: ROLLBACK
+[0m22:20:16.131574 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:20:16.131639 [debug] [Thread-1  ]: On model.ccer_demo.schools: Close
+[0m22:20:16.131898 [debug] [Thread-1  ]: Database Error in model schools (models/schools.sql)
+  relation "demo.ccer_schools" does not exist
+  LINE 25:     from        demo.ccer_schools cs
+                           ^
+  compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:20:16.132009 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b040df95-9436-4627-9398-0fa8b3124025', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063af070>]}
+[0m22:20:16.132170 [error] [Thread-1  ]: 2 of 2 ERROR creating sql view model demo.schools .............................. [[31mERROR[0m in 0.01s]
+[0m22:20:16.132339 [debug] [Thread-1  ]: Finished running node model.ccer_demo.schools
+[0m22:20:16.132969 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:20:16.133057 [debug] [MainThread]: Using postgres connection "master"
+[0m22:20:16.133116 [debug] [MainThread]: On master: BEGIN
+[0m22:20:16.133171 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:20:16.136151 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:20:16.136230 [debug] [MainThread]: On master: COMMIT
+[0m22:20:16.136289 [debug] [MainThread]: Using postgres connection "master"
+[0m22:20:16.136344 [debug] [MainThread]: On master: COMMIT
+[0m22:20:16.136458 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:20:16.136518 [debug] [MainThread]: On master: Close
+[0m22:20:16.136776 [info ] [MainThread]: 
+[0m22:20:16.136894 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.24 seconds (0.24s).
+[0m22:20:16.136999 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:20:16.137053 [debug] [MainThread]: Connection 'model.ccer_demo.schools' was properly closed.
+[0m22:20:16.170642 [info ] [MainThread]: 
+[0m22:20:16.170808 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m22:20:16.170918 [info ] [MainThread]: 
+[0m22:20:16.171012 [error] [MainThread]: [33mDatabase Error in model ccer_schools (models/staging/ccer_schools.sql)[0m
+[0m22:20:16.171104 [error] [MainThread]:   relation "ref" does not exist
+[0m22:20:16.171189 [error] [MainThread]:   LINE 6:     from        ref raw_school_list
+[0m22:20:16.171275 [error] [MainThread]:                           ^
+[0m22:20:16.171358 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:20:16.171442 [info ] [MainThread]: 
+[0m22:20:16.171527 [error] [MainThread]: [33mDatabase Error in model schools (models/schools.sql)[0m
+[0m22:20:16.171610 [error] [MainThread]:   relation "demo.ccer_schools" does not exist
+[0m22:20:16.171690 [error] [MainThread]:   LINE 25:     from        demo.ccer_schools cs
+[0m22:20:16.171769 [error] [MainThread]:                            ^
+[0m22:20:16.171850 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:20:16.171936 [info ] [MainThread]: 
+[0m22:20:16.172023 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m22:20:16.172233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040b3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106352dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106060310>]}
+[0m22:20:16.172466 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-26 22:22:41.175064 | 7fbde892-f872-4265-a41b-7525a11692d1 ==============================
+[0m22:22:41.175091 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:22:41.175696 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:22:41.175789 [debug] [MainThread]: Tracking: tracking
+[0m22:22:41.187493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a2c670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a2c790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a2c7c0>]}
+[0m22:22:41.216735 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:22:41.216945 [debug] [MainThread]: Partial parsing: updated file: ccer_demo://models/staging/ccer_schools.sql
+[0m22:22:41.223811 [debug] [MainThread]: 1699: static parser successfully parsed staging/ccer_schools.sql
+[0m22:22:41.236597 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ccer_demo.example
+
+[0m22:22:41.239242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7fbde892-f872-4265-a41b-7525a11692d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c920d0>]}
+[0m22:22:41.243084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7fbde892-f872-4265-a41b-7525a11692d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c17f10>]}
+[0m22:22:41.243283 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m22:22:41.243400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7fbde892-f872-4265-a41b-7525a11692d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c17f70>]}
+[0m22:22:41.244060 [info ] [MainThread]: 
+[0m22:22:41.244403 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:22:41.244901 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer"
+[0m22:22:41.250984 [debug] [ThreadPool]: Using postgres connection "list_ccer"
+[0m22:22:41.251120 [debug] [ThreadPool]: On list_ccer: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:22:41.251186 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:22:41.357363 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.11 seconds
+[0m22:22:41.358716 [debug] [ThreadPool]: On list_ccer: Close
+[0m22:22:41.359994 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer_demo"
+[0m22:22:41.365242 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:22:41.365400 [debug] [ThreadPool]: On list_ccer_demo: BEGIN
+[0m22:22:41.365508 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:22:41.371593 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+[0m22:22:41.371723 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:22:41.371821 [debug] [ThreadPool]: On list_ccer_demo: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer_demo"} */
+select
+      'ccer' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'demo'
+    union all
+    select
+      'ccer' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'demo'
+  
+[0m22:22:41.390335 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.02 seconds
+[0m22:22:41.391476 [debug] [ThreadPool]: On list_ccer_demo: ROLLBACK
+[0m22:22:41.391771 [debug] [ThreadPool]: On list_ccer_demo: Close
+[0m22:22:41.396050 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:41.396185 [debug] [MainThread]: On master: BEGIN
+[0m22:22:41.396284 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:22:41.399843 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:22:41.400028 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:41.400138 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:22:41.414743 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+[0m22:22:41.415954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7fbde892-f872-4265-a41b-7525a11692d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a49460>]}
+[0m22:22:41.416230 [debug] [MainThread]: On master: ROLLBACK
+[0m22:22:41.416547 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:41.416664 [debug] [MainThread]: On master: BEGIN
+[0m22:22:41.417096 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:22:41.417216 [debug] [MainThread]: On master: COMMIT
+[0m22:22:41.417329 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:41.417429 [debug] [MainThread]: On master: COMMIT
+[0m22:22:41.417675 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:22:41.417801 [debug] [MainThread]: On master: Close
+[0m22:22:41.418266 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:22:41.418483 [info ] [MainThread]: 
+[0m22:22:41.422130 [debug] [Thread-1  ]: Began running node model.ccer_demo.ccer_schools
+[0m22:22:41.422406 [info ] [Thread-1  ]: 1 of 2 START sql view model demo.ccer_schools .................................. [RUN]
+[0m22:22:41.422917 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.ccer_schools"
+[0m22:22:41.423040 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.ccer_schools
+[0m22:22:41.423155 [debug] [Thread-1  ]: Compiling model.ccer_demo.ccer_schools
+[0m22:22:41.424734 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.ccer_schools"
+[0m22:22:41.425173 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:22:41.425296 [debug] [Thread-1  ]: Began executing node model.ccer_demo.ccer_schools
+[0m22:22:41.453797 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.ccer_schools"
+[0m22:22:41.454304 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:22:41.454403 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: BEGIN
+[0m22:22:41.454470 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:22:41.458853 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:22:41.459000 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:22:41.459068 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.ccer_schools"} */
+
+  create view "ccer"."demo"."ccer_schools__dbt_tmp" as (
+    select  *
+from    raw_school_list;
+  );
+[0m22:22:41.459744 [debug] [Thread-1  ]: Postgres adapter: Postgres error: syntax error at or near ";"
+LINE 5: from    raw_school_list;
+                               ^
+
+[0m22:22:41.459822 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: ROLLBACK
+[0m22:22:41.460067 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:22:41.460144 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: Close
+[0m22:22:41.460453 [debug] [Thread-1  ]: Database Error in model ccer_schools (models/staging/ccer_schools.sql)
+  syntax error at or near ";"
+  LINE 5: from    raw_school_list;
+                                 ^
+  compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:22:41.460585 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fbde892-f872-4265-a41b-7525a11692d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ce9fd0>]}
+[0m22:22:41.460773 [error] [Thread-1  ]: 1 of 2 ERROR creating sql view model demo.ccer_schools ......................... [[31mERROR[0m in 0.04s]
+[0m22:22:41.460979 [debug] [Thread-1  ]: Finished running node model.ccer_demo.ccer_schools
+[0m22:22:41.461079 [debug] [Thread-1  ]: Began running node model.ccer_demo.schools
+[0m22:22:41.461253 [info ] [Thread-1  ]: 2 of 2 START sql view model demo.schools ....................................... [RUN]
+[0m22:22:41.461562 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.schools"
+[0m22:22:41.461633 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.schools
+[0m22:22:41.461703 [debug] [Thread-1  ]: Compiling model.ccer_demo.schools
+[0m22:22:41.462696 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.schools"
+[0m22:22:41.463170 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:22:41.463265 [debug] [Thread-1  ]: Began executing node model.ccer_demo.schools
+[0m22:22:41.465705 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.schools"
+[0m22:22:41.466080 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:22:41.466151 [debug] [Thread-1  ]: On model.ccer_demo.schools: BEGIN
+[0m22:22:41.466215 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:22:41.469581 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:22:41.469732 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:22:41.469792 [debug] [Thread-1  ]: On model.ccer_demo.schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.schools"} */
+
+  create view "ccer"."demo"."schools__dbt_tmp" as (
+    with ccer_schools as (
+
+    select      *
+    from        demo.raw_school_list
+),
+
+dim_schools as (
+
+    select      *
+    from        demo.dim_schools
+
+    ),
+
+final as (
+
+    select      cs.school_code,
+                ds.school_name,
+                cs.district_code,
+                cs.elementary_school_flag,
+                cs.middle_school_flag,
+                cs.high_school_flag   
+    from        demo.ccer_schools cs
+    inner join  demo.dim_schools ds
+        on      cs.school_code = ds.school_code
+
+)
+
+select * from final
+  );
+[0m22:22:41.473463 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "demo.ccer_schools" does not exist
+LINE 25:     from        demo.ccer_schools cs
+                         ^
+
+[0m22:22:41.473548 [debug] [Thread-1  ]: On model.ccer_demo.schools: ROLLBACK
+[0m22:22:41.473768 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:22:41.473829 [debug] [Thread-1  ]: On model.ccer_demo.schools: Close
+[0m22:22:41.474086 [debug] [Thread-1  ]: Database Error in model schools (models/schools.sql)
+  relation "demo.ccer_schools" does not exist
+  LINE 25:     from        demo.ccer_schools cs
+                           ^
+  compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:22:41.474190 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fbde892-f872-4265-a41b-7525a11692d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d34040>]}
+[0m22:22:41.474344 [error] [Thread-1  ]: 2 of 2 ERROR creating sql view model demo.schools .............................. [[31mERROR[0m in 0.01s]
+[0m22:22:41.474506 [debug] [Thread-1  ]: Finished running node model.ccer_demo.schools
+[0m22:22:41.475088 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:22:41.475171 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:41.475234 [debug] [MainThread]: On master: BEGIN
+[0m22:22:41.475287 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:22:41.478168 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:22:41.478260 [debug] [MainThread]: On master: COMMIT
+[0m22:22:41.478314 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:41.478364 [debug] [MainThread]: On master: COMMIT
+[0m22:22:41.478477 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:22:41.478533 [debug] [MainThread]: On master: Close
+[0m22:22:41.478788 [info ] [MainThread]: 
+[0m22:22:41.478892 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.23 seconds (0.23s).
+[0m22:22:41.478985 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:22:41.479036 [debug] [MainThread]: Connection 'model.ccer_demo.schools' was properly closed.
+[0m22:22:41.506860 [info ] [MainThread]: 
+[0m22:22:41.507039 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m22:22:41.507156 [info ] [MainThread]: 
+[0m22:22:41.507248 [error] [MainThread]: [33mDatabase Error in model ccer_schools (models/staging/ccer_schools.sql)[0m
+[0m22:22:41.507341 [error] [MainThread]:   syntax error at or near ";"
+[0m22:22:41.507426 [error] [MainThread]:   LINE 5: from    raw_school_list;
+[0m22:22:41.507506 [error] [MainThread]:                                  ^
+[0m22:22:41.507587 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:22:41.507670 [info ] [MainThread]: 
+[0m22:22:41.507754 [error] [MainThread]: [33mDatabase Error in model schools (models/schools.sql)[0m
+[0m22:22:41.507838 [error] [MainThread]:   relation "demo.ccer_schools" does not exist
+[0m22:22:41.507923 [error] [MainThread]:   LINE 25:     from        demo.ccer_schools cs
+[0m22:22:41.508002 [error] [MainThread]:                            ^
+[0m22:22:41.508082 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:22:41.508167 [info ] [MainThread]: 
+[0m22:22:41.508251 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m22:22:41.508389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052e5220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a69f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069ebfd0>]}
+[0m22:22:41.508521 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-26 22:22:54.219600 | 56ccb6a6-26d0-48f9-bdcb-a7c7e379dd2f ==============================
+[0m22:22:54.219627 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:22:54.220179 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:22:54.220260 [debug] [MainThread]: Tracking: tracking
+[0m22:22:54.227513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e9e790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e9e8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104e9e8e0>]}
+[0m22:22:54.261083 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m22:22:54.261392 [debug] [MainThread]: Partial parsing: updated file: ccer_demo://models/staging/ccer_schools.sql
+[0m22:22:54.270196 [debug] [MainThread]: 1699: static parser successfully parsed staging/ccer_schools.sql
+[0m22:22:54.283083 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ccer_demo.example
+
+[0m22:22:54.286121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '56ccb6a6-26d0-48f9-bdcb-a7c7e379dd2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054220d0>]}
+[0m22:22:54.289949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '56ccb6a6-26d0-48f9-bdcb-a7c7e379dd2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051a7f70>]}
+[0m22:22:54.290153 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m22:22:54.290276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '56ccb6a6-26d0-48f9-bdcb-a7c7e379dd2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051a7fd0>]}
+[0m22:22:54.290997 [info ] [MainThread]: 
+[0m22:22:54.291348 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:22:54.291841 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer"
+[0m22:22:54.297933 [debug] [ThreadPool]: Using postgres connection "list_ccer"
+[0m22:22:54.298141 [debug] [ThreadPool]: On list_ccer: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:22:54.298215 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:22:54.316942 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.02 seconds
+[0m22:22:54.318063 [debug] [ThreadPool]: On list_ccer: Close
+[0m22:22:54.318848 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer_demo"
+[0m22:22:54.322081 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:22:54.322191 [debug] [ThreadPool]: On list_ccer_demo: BEGIN
+[0m22:22:54.322256 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:22:54.329321 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+[0m22:22:54.329433 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:22:54.329499 [debug] [ThreadPool]: On list_ccer_demo: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer_demo"} */
+select
+      'ccer' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'demo'
+    union all
+    select
+      'ccer' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'demo'
+  
+[0m22:22:54.336383 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+[0m22:22:54.337066 [debug] [ThreadPool]: On list_ccer_demo: ROLLBACK
+[0m22:22:54.337327 [debug] [ThreadPool]: On list_ccer_demo: Close
+[0m22:22:54.339999 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:54.340095 [debug] [MainThread]: On master: BEGIN
+[0m22:22:54.340161 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:22:54.343434 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:22:54.343524 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:54.343585 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:22:54.351179 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+[0m22:22:54.351776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '56ccb6a6-26d0-48f9-bdcb-a7c7e379dd2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051a7ca0>]}
+[0m22:22:54.351930 [debug] [MainThread]: On master: ROLLBACK
+[0m22:22:54.352140 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:54.352211 [debug] [MainThread]: On master: BEGIN
+[0m22:22:54.352548 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:22:54.352624 [debug] [MainThread]: On master: COMMIT
+[0m22:22:54.352691 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:54.352748 [debug] [MainThread]: On master: COMMIT
+[0m22:22:54.352912 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:22:54.352983 [debug] [MainThread]: On master: Close
+[0m22:22:54.353253 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:22:54.353378 [info ] [MainThread]: 
+[0m22:22:54.355686 [debug] [Thread-1  ]: Began running node model.ccer_demo.ccer_schools
+[0m22:22:54.355866 [info ] [Thread-1  ]: 1 of 2 START sql view model demo.ccer_schools .................................. [RUN]
+[0m22:22:54.356212 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.ccer_schools"
+[0m22:22:54.356292 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.ccer_schools
+[0m22:22:54.356371 [debug] [Thread-1  ]: Compiling model.ccer_demo.ccer_schools
+[0m22:22:54.357435 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.ccer_schools"
+[0m22:22:54.357704 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:22:54.357788 [debug] [Thread-1  ]: Began executing node model.ccer_demo.ccer_schools
+[0m22:22:54.381883 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.ccer_schools"
+[0m22:22:54.382453 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:22:54.382547 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: BEGIN
+[0m22:22:54.382611 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:22:54.385717 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:22:54.385872 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:22:54.385939 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.ccer_schools"} */
+
+  create view "ccer"."demo"."ccer_schools__dbt_tmp" as (
+    select  *
+from    raw_school_list
+  );
+[0m22:22:54.402166 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "raw_school_list" does not exist
+LINE 5: from    raw_school_list
+                ^
+
+[0m22:22:54.402353 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: ROLLBACK
+[0m22:22:54.402646 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:22:54.402747 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: Close
+[0m22:22:54.403044 [debug] [Thread-1  ]: Database Error in model ccer_schools (models/staging/ccer_schools.sql)
+  relation "raw_school_list" does not exist
+  LINE 5: from    raw_school_list
+                  ^
+  compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:22:54.403165 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56ccb6a6-26d0-48f9-bdcb-a7c7e379dd2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054c2160>]}
+[0m22:22:54.403340 [error] [Thread-1  ]: 1 of 2 ERROR creating sql view model demo.ccer_schools ......................... [[31mERROR[0m in 0.05s]
+[0m22:22:54.403533 [debug] [Thread-1  ]: Finished running node model.ccer_demo.ccer_schools
+[0m22:22:54.403620 [debug] [Thread-1  ]: Began running node model.ccer_demo.schools
+[0m22:22:54.403774 [info ] [Thread-1  ]: 2 of 2 START sql view model demo.schools ....................................... [RUN]
+[0m22:22:54.404049 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.schools"
+[0m22:22:54.404113 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.schools
+[0m22:22:54.404174 [debug] [Thread-1  ]: Compiling model.ccer_demo.schools
+[0m22:22:54.405083 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.schools"
+[0m22:22:54.405316 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:22:54.405382 [debug] [Thread-1  ]: Began executing node model.ccer_demo.schools
+[0m22:22:54.407662 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.schools"
+[0m22:22:54.407984 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:22:54.408050 [debug] [Thread-1  ]: On model.ccer_demo.schools: BEGIN
+[0m22:22:54.408108 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:22:54.410904 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:22:54.410979 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:22:54.411037 [debug] [Thread-1  ]: On model.ccer_demo.schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.schools"} */
+
+  create view "ccer"."demo"."schools__dbt_tmp" as (
+    with ccer_schools as (
+
+    select      *
+    from        demo.raw_school_list
+),
+
+dim_schools as (
+
+    select      *
+    from        demo.dim_schools
+
+    ),
+
+final as (
+
+    select      cs.school_code,
+                ds.school_name,
+                cs.district_code,
+                cs.elementary_school_flag,
+                cs.middle_school_flag,
+                cs.high_school_flag   
+    from        demo.ccer_schools cs
+    inner join  demo.dim_schools ds
+        on      cs.school_code = ds.school_code
+
+)
+
+select * from final
+  );
+[0m22:22:54.411506 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "demo.ccer_schools" does not exist
+LINE 25:     from        demo.ccer_schools cs
+                         ^
+
+[0m22:22:54.411568 [debug] [Thread-1  ]: On model.ccer_demo.schools: ROLLBACK
+[0m22:22:54.411720 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:22:54.411787 [debug] [Thread-1  ]: On model.ccer_demo.schools: Close
+[0m22:22:54.412045 [debug] [Thread-1  ]: Database Error in model schools (models/schools.sql)
+  relation "demo.ccer_schools" does not exist
+  LINE 25:     from        demo.ccer_schools cs
+                           ^
+  compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:22:54.412158 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '56ccb6a6-26d0-48f9-bdcb-a7c7e379dd2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054c2070>]}
+[0m22:22:54.412314 [error] [Thread-1  ]: 2 of 2 ERROR creating sql view model demo.schools .............................. [[31mERROR[0m in 0.01s]
+[0m22:22:54.412491 [debug] [Thread-1  ]: Finished running node model.ccer_demo.schools
+[0m22:22:54.413165 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:22:54.413265 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:54.413330 [debug] [MainThread]: On master: BEGIN
+[0m22:22:54.413388 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:22:54.420455 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+[0m22:22:54.420750 [debug] [MainThread]: On master: COMMIT
+[0m22:22:54.420818 [debug] [MainThread]: Using postgres connection "master"
+[0m22:22:54.420875 [debug] [MainThread]: On master: COMMIT
+[0m22:22:54.421049 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:22:54.421143 [debug] [MainThread]: On master: Close
+[0m22:22:54.421484 [info ] [MainThread]: 
+[0m22:22:54.421610 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.13 seconds (0.13s).
+[0m22:22:54.421709 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:22:54.421761 [debug] [MainThread]: Connection 'model.ccer_demo.schools' was properly closed.
+[0m22:22:54.456198 [info ] [MainThread]: 
+[0m22:22:54.456388 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m22:22:54.456507 [info ] [MainThread]: 
+[0m22:22:54.456603 [error] [MainThread]: [33mDatabase Error in model ccer_schools (models/staging/ccer_schools.sql)[0m
+[0m22:22:54.456695 [error] [MainThread]:   relation "raw_school_list" does not exist
+[0m22:22:54.456780 [error] [MainThread]:   LINE 5: from    raw_school_list
+[0m22:22:54.456862 [error] [MainThread]:                   ^
+[0m22:22:54.456943 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:22:54.457026 [info ] [MainThread]: 
+[0m22:22:54.457110 [error] [MainThread]: [33mDatabase Error in model schools (models/schools.sql)[0m
+[0m22:22:54.457193 [error] [MainThread]:   relation "demo.ccer_schools" does not exist
+[0m22:22:54.457280 [error] [MainThread]:   LINE 25:     from        demo.ccer_schools cs
+[0m22:22:54.457360 [error] [MainThread]:                            ^
+[0m22:22:54.457441 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:22:54.457529 [info ] [MainThread]: 
+[0m22:22:54.457614 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m22:22:54.457770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102bc3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105465dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d341c0>]}
+[0m22:22:54.457901 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-26 22:38:20.577303 | 6ecabe72-5782-4e05-b6fa-0b1371563e12 ==============================
+[0m22:38:20.577360 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:38:20.577878 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:38:20.577972 [debug] [MainThread]: Tracking: tracking
+[0m22:38:20.590593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10821f5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10821f6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10821f700>]}
+[0m22:38:20.610743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081d32b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108408ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108408c40>]}
+[0m22:38:20.610917 [debug] [MainThread]: Flushing usage events
+[0m22:38:20.968127 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The schema file at models/staging/schema.yml is invalid because the value of 'models' is not a list
+
+
+============================== 2023-01-26 22:40:24.712970 | 0c80def6-d7d1-4ca7-823d-3791253224ae ==============================
+[0m22:40:24.713020 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:40:24.713537 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:40:24.713633 [debug] [MainThread]: Tracking: tracking
+[0m22:40:24.724859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c68700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c68820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c68850>]}
+[0m22:40:24.745321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c85ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e53d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e53f10>]}
+[0m22:40:24.745477 [debug] [MainThread]: Flushing usage events
+[0m22:40:25.104510 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The schema file at models/staging/schema.yml is invalid because the value of 'models' is not a list
+
+
+============================== 2023-01-26 22:40:49.908971 | 781b12a0-45ca-44c6-b43a-467fef728f1a ==============================
+[0m22:40:49.908997 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:40:49.909575 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:40:49.909652 [debug] [MainThread]: Tracking: tracking
+[0m22:40:49.924065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10859f790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10859f8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10859f8e0>]}
+[0m22:40:49.956448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085c5730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108793e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108793fa0>]}
+[0m22:40:49.956644 [debug] [MainThread]: Flushing usage events
+[0m22:40:50.310115 [error] [MainThread]: Encountered an error:
+Parsing Error
+  The schema file at models/staging/schema.yml is invalid because the value of 'models' is not a list
+
+
+============================== 2023-01-26 22:48:16.207319 | eab92844-d91b-44f9-b5d9-197921694032 ==============================
+[0m22:48:16.207351 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:48:16.207881 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:48:16.207961 [debug] [MainThread]: Tracking: tracking
+[0m22:48:16.248876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c1e7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c1e8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c1e910>]}
+[0m22:48:16.268850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c45250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c88040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c881c0>]}
+[0m22:48:16.268999 [debug] [MainThread]: Flushing usage events
+[0m22:48:16.665061 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading ccer_demo: staging/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   models:
+    4  | 
+    5  |     name: ccer_schools
+    6  |     description: ccer school list
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 9:
+          models:
+                ^
+
+
+============================== 2023-01-26 22:48:54.075778 | 072972d9-d82c-4465-b67d-ce0778c30b9e ==============================
+[0m22:48:54.075807 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:48:54.076466 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:48:54.076556 [debug] [MainThread]: Tracking: tracking
+[0m22:48:54.095062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ac6940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ac6a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ac6a90>]}
+[0m22:48:54.120179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cbaf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bf0070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bf0340>]}
+[0m22:48:54.120413 [debug] [MainThread]: Flushing usage events
+[0m22:48:54.444641 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading ccer_demo: staging/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   models:
+    4  | 
+    5  |     name: ccer_schools
+    6  |     description: ccer school list
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 9:
+          models:
+                ^
+
+
+============================== 2023-01-26 22:49:40.099331 | bae6ecb3-e071-431b-abcf-22569caa10a9 ==============================
+[0m22:49:40.099364 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:49:40.099954 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:49:40.100074 [debug] [MainThread]: Tracking: tracking
+[0m22:49:40.112057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055e0940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055e0a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055e0a90>]}
+[0m22:49:40.134637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060e6f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10602a070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10602a340>]}
+[0m22:49:40.134849 [debug] [MainThread]: Flushing usage events
+[0m22:49:40.503604 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading ccer_demo: staging/schema.yml - Runtime Error
+    Syntax error near line 5
+    ------------------------------
+    2  | 
+    3  |   models
+    4  | 
+    5  |     name: ccer_schools
+    6  |     description: ccer school list
+    7  | 
+    8  |     name: dim_schools
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 5, column 9:
+            name: ccer_schools
+                ^
+
+
+============================== 2023-01-26 22:51:32.557697 | 6d9a222d-780b-4b78-9287-70c43650aa2e ==============================
+[0m22:51:32.557778 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:51:32.558350 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:51:32.558438 [debug] [MainThread]: Tracking: tracking
+[0m22:51:32.568440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108954760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108954880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089548b0>]}
+[0m22:51:32.591058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089796a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a78070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a78160>]}
+[0m22:51:32.591246 [debug] [MainThread]: Flushing usage events
+[0m22:51:32.950388 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading ccer_demo: staging/schema.yml - Runtime Error
+    Syntax error near line 3
+    ------------------------------
+    1  | version: 2
+    2  | 
+    3  |   models:
+    4  | 
+    5  |     - name: ccer_schools
+    6  |       description: ccer school list
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 3, column 9:
+          models:
+                ^
+
+
+============================== 2023-01-26 22:55:27.702038 | 32830b21-4fba-4c68-83ab-92b6dda934d4 ==============================
+[0m22:55:27.702077 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:55:27.702594 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:55:27.702677 [debug] [MainThread]: Tracking: tracking
+[0m22:55:27.714128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c485e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c48700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c48730>]}
+[0m22:55:27.736142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106416190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d60220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108d60160>]}
+[0m22:55:27.736326 [debug] [MainThread]: Flushing usage events
+[0m22:55:28.098363 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading ccer_demo: staging/schema.yml - Runtime Error
+    Syntax error near line 6
+    ------------------------------
+    3  | models:
+    4  | 
+    5  |   - name: ccer_schools
+    6  |       description: ccer school list
+    7  | 
+    8  |   - name: dim_schools
+    
+    Raw Error:
+    ------------------------------
+    mapping values are not allowed here
+      in "<unicode string>", line 6, column 18:
+              description: ccer school list
+                         ^
+
+
+============================== 2023-01-26 22:56:36.434195 | 7eb87b0e-78ef-4ad0-84e2-6aa58b1321a5 ==============================
+[0m22:56:36.434244 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:56:36.434961 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:56:36.435066 [debug] [MainThread]: Tracking: tracking
+[0m22:56:36.446667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106edf790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106edf8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106edf8e0>]}
+[0m22:56:36.480813 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m22:56:36.481092 [debug] [MainThread]: Partial parsing: added file: ccer_demo://models/staging/schema.yml
+[0m22:56:36.486093 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_schools' in the 'models' section of file 'models/staging/schema.yml'
+[0m22:56:36.493258 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ccer_demo.example
+
+[0m22:56:36.496698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7eb87b0e-78ef-4ad0-84e2-6aa58b1321a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107253f40>]}
+[0m22:56:36.499911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7eb87b0e-78ef-4ad0-84e2-6aa58b1321a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070d3d60>]}
+[0m22:56:36.500044 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m22:56:36.500166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7eb87b0e-78ef-4ad0-84e2-6aa58b1321a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070d3f70>]}
+[0m22:56:36.500757 [info ] [MainThread]: 
+[0m22:56:36.501056 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:56:36.501572 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer"
+[0m22:56:36.507330 [debug] [ThreadPool]: Using postgres connection "list_ccer"
+[0m22:56:36.507495 [debug] [ThreadPool]: On list_ccer: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:56:36.507567 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:56:36.632485 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.12 seconds
+[0m22:56:36.634122 [debug] [ThreadPool]: On list_ccer: Close
+[0m22:56:36.635443 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer_demo"
+[0m22:56:36.640870 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:56:36.641068 [debug] [ThreadPool]: On list_ccer_demo: BEGIN
+[0m22:56:36.641173 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:56:36.647331 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+[0m22:56:36.647540 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:56:36.647639 [debug] [ThreadPool]: On list_ccer_demo: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer_demo"} */
+select
+      'ccer' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'demo'
+    union all
+    select
+      'ccer' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'demo'
+  
+[0m22:56:36.665876 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.02 seconds
+[0m22:56:36.666803 [debug] [ThreadPool]: On list_ccer_demo: ROLLBACK
+[0m22:56:36.667071 [debug] [ThreadPool]: On list_ccer_demo: Close
+[0m22:56:36.670841 [debug] [MainThread]: Using postgres connection "master"
+[0m22:56:36.670999 [debug] [MainThread]: On master: BEGIN
+[0m22:56:36.671117 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:56:36.675145 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:56:36.675278 [debug] [MainThread]: Using postgres connection "master"
+[0m22:56:36.675391 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:56:36.696526 [debug] [MainThread]: SQL status: SELECT 0 in 0.02 seconds
+[0m22:56:36.697640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7eb87b0e-78ef-4ad0-84e2-6aa58b1321a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f018e0>]}
+[0m22:56:36.697915 [debug] [MainThread]: On master: ROLLBACK
+[0m22:56:36.698264 [debug] [MainThread]: Using postgres connection "master"
+[0m22:56:36.698401 [debug] [MainThread]: On master: BEGIN
+[0m22:56:36.698996 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:56:36.699144 [debug] [MainThread]: On master: COMMIT
+[0m22:56:36.699272 [debug] [MainThread]: Using postgres connection "master"
+[0m22:56:36.699386 [debug] [MainThread]: On master: COMMIT
+[0m22:56:36.699668 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:56:36.699811 [debug] [MainThread]: On master: Close
+[0m22:56:36.700324 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:56:36.700578 [info ] [MainThread]: 
+[0m22:56:36.703911 [debug] [Thread-1  ]: Began running node model.ccer_demo.ccer_schools
+[0m22:56:36.704157 [info ] [Thread-1  ]: 1 of 2 START sql view model demo.ccer_schools .................................. [RUN]
+[0m22:56:36.704716 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.ccer_schools"
+[0m22:56:36.704836 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.ccer_schools
+[0m22:56:36.704953 [debug] [Thread-1  ]: Compiling model.ccer_demo.ccer_schools
+[0m22:56:36.706637 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.ccer_schools"
+[0m22:56:36.707534 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:56:36.707702 [debug] [Thread-1  ]: Began executing node model.ccer_demo.ccer_schools
+[0m22:56:36.738501 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.ccer_schools"
+[0m22:56:36.738907 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:56:36.739000 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: BEGIN
+[0m22:56:36.739077 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:56:36.742772 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:56:36.742896 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:56:36.742974 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.ccer_schools"} */
+
+  create view "ccer"."demo"."ccer_schools__dbt_tmp" as (
+    select  *
+from    raw_school_list
+  );
+[0m22:56:36.750185 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "raw_school_list" does not exist
+LINE 5: from    raw_school_list
+                ^
+
+[0m22:56:36.750274 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: ROLLBACK
+[0m22:56:36.750613 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:56:36.750725 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: Close
+[0m22:56:36.751092 [debug] [Thread-1  ]: Database Error in model ccer_schools (models/staging/ccer_schools.sql)
+  relation "raw_school_list" does not exist
+  LINE 5: from    raw_school_list
+                  ^
+  compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:56:36.751261 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eb87b0e-78ef-4ad0-84e2-6aa58b1321a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107426af0>]}
+[0m22:56:36.751491 [error] [Thread-1  ]: 1 of 2 ERROR creating sql view model demo.ccer_schools ......................... [[31mERROR[0m in 0.05s]
+[0m22:56:36.751747 [debug] [Thread-1  ]: Finished running node model.ccer_demo.ccer_schools
+[0m22:56:36.751868 [debug] [Thread-1  ]: Began running node model.ccer_demo.schools
+[0m22:56:36.752091 [info ] [Thread-1  ]: 2 of 2 START sql view model demo.schools ....................................... [RUN]
+[0m22:56:36.752477 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.schools"
+[0m22:56:36.752573 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.schools
+[0m22:56:36.752654 [debug] [Thread-1  ]: Compiling model.ccer_demo.schools
+[0m22:56:36.753803 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.schools"
+[0m22:56:36.754079 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:56:36.754169 [debug] [Thread-1  ]: Began executing node model.ccer_demo.schools
+[0m22:56:36.756861 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.schools"
+[0m22:56:36.757478 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:56:36.757559 [debug] [Thread-1  ]: On model.ccer_demo.schools: BEGIN
+[0m22:56:36.757626 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:56:36.761250 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:56:36.761401 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:56:36.761470 [debug] [Thread-1  ]: On model.ccer_demo.schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.schools"} */
+
+  create view "ccer"."demo"."schools__dbt_tmp" as (
+    with ccer_schools as (
+
+    select      *
+    from        demo.raw_school_list
+),
+
+dim_schools as (
+
+    select      *
+    from        demo.dim_schools
+
+    ),
+
+final as (
+
+    select      cs.school_code,
+                ds.school_name,
+                cs.district_code,
+                cs.elementary_school_flag,
+                cs.middle_school_flag,
+                cs.high_school_flag   
+    from        demo.ccer_schools cs
+    inner join  demo.dim_schools ds
+        on      cs.school_code = ds.school_code
+
+)
+
+select * from final
+  );
+[0m22:56:36.767442 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "demo.ccer_schools" does not exist
+LINE 25:     from        demo.ccer_schools cs
+                         ^
+
+[0m22:56:36.767534 [debug] [Thread-1  ]: On model.ccer_demo.schools: ROLLBACK
+[0m22:56:36.767811 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:56:36.767887 [debug] [Thread-1  ]: On model.ccer_demo.schools: Close
+[0m22:56:36.768202 [debug] [Thread-1  ]: Database Error in model schools (models/schools.sql)
+  relation "demo.ccer_schools" does not exist
+  LINE 25:     from        demo.ccer_schools cs
+                           ^
+  compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:56:36.768333 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eb87b0e-78ef-4ad0-84e2-6aa58b1321a5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107426760>]}
+[0m22:56:36.768515 [error] [Thread-1  ]: 2 of 2 ERROR creating sql view model demo.schools .............................. [[31mERROR[0m in 0.02s]
+[0m22:56:36.768718 [debug] [Thread-1  ]: Finished running node model.ccer_demo.schools
+[0m22:56:36.769418 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:56:36.769567 [debug] [MainThread]: Using postgres connection "master"
+[0m22:56:36.769646 [debug] [MainThread]: On master: BEGIN
+[0m22:56:36.769717 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:56:36.773384 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:56:36.773506 [debug] [MainThread]: On master: COMMIT
+[0m22:56:36.773580 [debug] [MainThread]: Using postgres connection "master"
+[0m22:56:36.773646 [debug] [MainThread]: On master: COMMIT
+[0m22:56:36.773868 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:56:36.773974 [debug] [MainThread]: On master: Close
+[0m22:56:36.774342 [info ] [MainThread]: 
+[0m22:56:36.774505 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.27 seconds (0.27s).
+[0m22:56:36.774630 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:56:36.774696 [debug] [MainThread]: Connection 'model.ccer_demo.schools' was properly closed.
+[0m22:56:36.802641 [info ] [MainThread]: 
+[0m22:56:36.802797 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m22:56:36.802911 [info ] [MainThread]: 
+[0m22:56:36.803003 [error] [MainThread]: [33mDatabase Error in model ccer_schools (models/staging/ccer_schools.sql)[0m
+[0m22:56:36.803094 [error] [MainThread]:   relation "raw_school_list" does not exist
+[0m22:56:36.803177 [error] [MainThread]:   LINE 5: from    raw_school_list
+[0m22:56:36.803260 [error] [MainThread]:                   ^
+[0m22:56:36.803344 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:56:36.803429 [info ] [MainThread]: 
+[0m22:56:36.803515 [error] [MainThread]: [33mDatabase Error in model schools (models/schools.sql)[0m
+[0m22:56:36.803598 [error] [MainThread]:   relation "demo.ccer_schools" does not exist
+[0m22:56:36.803678 [error] [MainThread]:   LINE 25:     from        demo.ccer_schools cs
+[0m22:56:36.803759 [error] [MainThread]:                            ^
+[0m22:56:36.803842 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:56:36.803928 [info ] [MainThread]: 
+[0m22:56:36.804010 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m22:56:36.804142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055aab20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cf5790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d64b80>]}
+[0m22:56:36.804257 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-26 22:58:53.792963 | 3cf08827-c73c-4860-aab0-2b63893719e2 ==============================
+[0m22:58:53.793015 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:58:53.794018 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+[0m22:58:53.794376 [debug] [MainThread]: Tracking: tracking
+[0m22:58:53.813222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11845f850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11845f970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11845f9a0>]}
+[0m22:58:53.843327 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:58:53.843452 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:58:53.843630 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ccer_demo.example
+
+[0m22:58:53.847162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3cf08827-c73c-4860-aab0-2b63893719e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1186890d0>]}
+[0m22:58:53.851471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3cf08827-c73c-4860-aab0-2b63893719e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1185e0bb0>]}
+[0m22:58:53.851703 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m22:58:53.851867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cf08827-c73c-4860-aab0-2b63893719e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1185e0dc0>]}
+[0m22:58:53.852692 [info ] [MainThread]: 
+[0m22:58:53.853039 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:58:53.853471 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer_demo"
+[0m22:58:53.858970 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:58:53.859064 [debug] [ThreadPool]: On list_ccer_demo: BEGIN
+[0m22:58:53.859132 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:58:53.949145 [debug] [ThreadPool]: SQL status: BEGIN in 0.09 seconds
+[0m22:58:53.949388 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:58:53.949497 [debug] [ThreadPool]: On list_ccer_demo: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer_demo"} */
+select
+      'ccer' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'demo'
+    union all
+    select
+      'ccer' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'demo'
+  
+[0m22:58:53.955545 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+[0m22:58:53.956999 [debug] [ThreadPool]: On list_ccer_demo: ROLLBACK
+[0m22:58:53.957589 [debug] [ThreadPool]: On list_ccer_demo: Close
+[0m22:58:53.961766 [debug] [MainThread]: Using postgres connection "master"
+[0m22:58:53.961967 [debug] [MainThread]: On master: BEGIN
+[0m22:58:53.962072 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:58:53.967258 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+[0m22:58:53.967442 [debug] [MainThread]: Using postgres connection "master"
+[0m22:58:53.967539 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:58:53.981449 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+[0m22:58:53.982265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cf08827-c73c-4860-aab0-2b63893719e2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118486880>]}
+[0m22:58:53.982446 [debug] [MainThread]: On master: ROLLBACK
+[0m22:58:53.982675 [debug] [MainThread]: On master: Close
+[0m22:58:53.983015 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:58:53.983154 [info ] [MainThread]: 
+[0m22:58:53.985732 [debug] [Thread-1  ]: Began running node model.ccer_demo.ccer_schools
+[0m22:58:53.986161 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.ccer_schools"
+[0m22:58:53.986265 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.ccer_schools
+[0m22:58:53.986360 [debug] [Thread-1  ]: Compiling model.ccer_demo.ccer_schools
+[0m22:58:53.987633 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.ccer_schools"
+[0m22:58:53.988185 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:58:53.988288 [debug] [Thread-1  ]: Began executing node model.ccer_demo.ccer_schools
+[0m22:58:53.988376 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:58:53.988763 [debug] [Thread-1  ]: Finished running node model.ccer_demo.ccer_schools
+[0m22:58:53.988865 [debug] [Thread-1  ]: Began running node model.ccer_demo.schools
+[0m22:58:53.989163 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.schools"
+[0m22:58:53.989242 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.schools
+[0m22:58:53.989307 [debug] [Thread-1  ]: Compiling model.ccer_demo.schools
+[0m22:58:53.990304 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.schools"
+[0m22:58:53.990509 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:58:53.990584 [debug] [Thread-1  ]: Began executing node model.ccer_demo.schools
+[0m22:58:53.990648 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:58:53.990940 [debug] [Thread-1  ]: Finished running node model.ccer_demo.schools
+[0m22:58:53.991364 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:58:53.991435 [debug] [MainThread]: Connection 'model.ccer_demo.schools' was properly closed.
+[0m22:58:53.994917 [info ] [MainThread]: Done.
+[0m22:58:53.995097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118744520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118744610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118753e80>]}
+[0m22:58:53.995224 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-26 22:59:06.562548 | d478a595-34ef-49db-ae5b-5114051a1d1f ==============================
+[0m22:59:06.562592 [info ] [MainThread]: Running with dbt=1.3.1
+[0m22:59:06.563119 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/jono/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:59:06.563209 [debug] [MainThread]: Tracking: tracking
+[0m22:59:06.570753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040637f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104063910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104063940>]}
+[0m22:59:06.598564 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:59:06.598685 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:59:06.598851 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ccer_demo.example
+
+[0m22:59:06.602424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd478a595-34ef-49db-ae5b-5114051a1d1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10428cfd0>]}
+[0m22:59:06.607537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd478a595-34ef-49db-ae5b-5114051a1d1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041d6b50>]}
+[0m22:59:06.607728 [info ] [MainThread]: Found 2 models, 0 tests, 0 snapshots, 0 analyses, 289 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m22:59:06.607859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd478a595-34ef-49db-ae5b-5114051a1d1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041d6d60>]}
+[0m22:59:06.608485 [info ] [MainThread]: 
+[0m22:59:06.608799 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:59:06.609256 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer"
+[0m22:59:06.614710 [debug] [ThreadPool]: Using postgres connection "list_ccer"
+[0m22:59:06.614797 [debug] [ThreadPool]: On list_ccer: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m22:59:06.614854 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:59:06.630240 [debug] [ThreadPool]: SQL status: SELECT 9 in 0.02 seconds
+[0m22:59:06.631054 [debug] [ThreadPool]: On list_ccer: Close
+[0m22:59:06.631703 [debug] [ThreadPool]: Acquiring new postgres connection "list_ccer_demo"
+[0m22:59:06.634763 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:59:06.634895 [debug] [ThreadPool]: On list_ccer_demo: BEGIN
+[0m22:59:06.634954 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:59:06.639813 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m22:59:06.639882 [debug] [ThreadPool]: Using postgres connection "list_ccer_demo"
+[0m22:59:06.639934 [debug] [ThreadPool]: On list_ccer_demo: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "list_ccer_demo"} */
+select
+      'ccer' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'demo'
+    union all
+    select
+      'ccer' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'demo'
+  
+[0m22:59:06.645334 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+[0m22:59:06.646085 [debug] [ThreadPool]: On list_ccer_demo: ROLLBACK
+[0m22:59:06.646332 [debug] [ThreadPool]: On list_ccer_demo: Close
+[0m22:59:06.648784 [debug] [MainThread]: Using postgres connection "master"
+[0m22:59:06.648869 [debug] [MainThread]: On master: BEGIN
+[0m22:59:06.648930 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:59:06.654737 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+[0m22:59:06.654813 [debug] [MainThread]: Using postgres connection "master"
+[0m22:59:06.654870 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m22:59:06.664077 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+[0m22:59:06.664658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd478a595-34ef-49db-ae5b-5114051a1d1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10408ae80>]}
+[0m22:59:06.664806 [debug] [MainThread]: On master: ROLLBACK
+[0m22:59:06.665013 [debug] [MainThread]: Using postgres connection "master"
+[0m22:59:06.665078 [debug] [MainThread]: On master: BEGIN
+[0m22:59:06.665407 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:59:06.665482 [debug] [MainThread]: On master: COMMIT
+[0m22:59:06.665546 [debug] [MainThread]: Using postgres connection "master"
+[0m22:59:06.665602 [debug] [MainThread]: On master: COMMIT
+[0m22:59:06.665783 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:59:06.665855 [debug] [MainThread]: On master: Close
+[0m22:59:06.666117 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:59:06.666240 [info ] [MainThread]: 
+[0m22:59:06.668482 [debug] [Thread-1  ]: Began running node model.ccer_demo.ccer_schools
+[0m22:59:06.668638 [info ] [Thread-1  ]: 1 of 2 START sql view model demo.ccer_schools .................................. [RUN]
+[0m22:59:06.668966 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.ccer_schools"
+[0m22:59:06.669048 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.ccer_schools
+[0m22:59:06.669128 [debug] [Thread-1  ]: Compiling model.ccer_demo.ccer_schools
+[0m22:59:06.670093 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.ccer_schools"
+[0m22:59:06.670518 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:59:06.670617 [debug] [Thread-1  ]: Began executing node model.ccer_demo.ccer_schools
+[0m22:59:06.691517 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.ccer_schools"
+[0m22:59:06.691908 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:59:06.691979 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: BEGIN
+[0m22:59:06.692033 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:59:06.697238 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+[0m22:59:06.697323 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.ccer_schools"
+[0m22:59:06.697386 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.ccer_schools"} */
+
+  create view "ccer"."demo"."ccer_schools__dbt_tmp" as (
+    select  *
+from    raw_school_list
+  );
+[0m22:59:06.698785 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "raw_school_list" does not exist
+LINE 5: from    raw_school_list
+                ^
+
+[0m22:59:06.698859 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: ROLLBACK
+[0m22:59:06.699094 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:59:06.699163 [debug] [Thread-1  ]: On model.ccer_demo.ccer_schools: Close
+[0m22:59:06.699426 [debug] [Thread-1  ]: Database Error in model ccer_schools (models/staging/ccer_schools.sql)
+  relation "raw_school_list" does not exist
+  LINE 5: from    raw_school_list
+                  ^
+  compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:59:06.699546 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd478a595-34ef-49db-ae5b-5114051a1d1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10433c610>]}
+[0m22:59:06.699710 [error] [Thread-1  ]: 1 of 2 ERROR creating sql view model demo.ccer_schools ......................... [[31mERROR[0m in 0.03s]
+[0m22:59:06.699898 [debug] [Thread-1  ]: Finished running node model.ccer_demo.ccer_schools
+[0m22:59:06.699988 [debug] [Thread-1  ]: Began running node model.ccer_demo.schools
+[0m22:59:06.700178 [info ] [Thread-1  ]: 2 of 2 START sql view model demo.schools ....................................... [RUN]
+[0m22:59:06.700565 [debug] [Thread-1  ]: Acquiring new postgres connection "model.ccer_demo.schools"
+[0m22:59:06.700725 [debug] [Thread-1  ]: Began compiling node model.ccer_demo.schools
+[0m22:59:06.700801 [debug] [Thread-1  ]: Compiling model.ccer_demo.schools
+[0m22:59:06.701864 [debug] [Thread-1  ]: Writing injected SQL for node "model.ccer_demo.schools"
+[0m22:59:06.702201 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:59:06.702297 [debug] [Thread-1  ]: Began executing node model.ccer_demo.schools
+[0m22:59:06.704740 [debug] [Thread-1  ]: Writing runtime sql for node "model.ccer_demo.schools"
+[0m22:59:06.704994 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:59:06.705063 [debug] [Thread-1  ]: On model.ccer_demo.schools: BEGIN
+[0m22:59:06.705122 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:59:06.708048 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m22:59:06.708123 [debug] [Thread-1  ]: Using postgres connection "model.ccer_demo.schools"
+[0m22:59:06.708181 [debug] [Thread-1  ]: On model.ccer_demo.schools: /* {"app": "dbt", "dbt_version": "1.3.1", "profile_name": "ccer_demo", "target_name": "dev", "node_id": "model.ccer_demo.schools"} */
+
+  create view "ccer"."demo"."schools__dbt_tmp" as (
+    with ccer_schools as (
+
+    select      *
+    from        demo.raw_school_list
+),
+
+dim_schools as (
+
+    select      *
+    from        demo.dim_schools
+
+    ),
+
+final as (
+
+    select      cs.school_code,
+                ds.school_name,
+                cs.district_code,
+                cs.elementary_school_flag,
+                cs.middle_school_flag,
+                cs.high_school_flag   
+    from        demo.ccer_schools cs
+    inner join  demo.dim_schools ds
+        on      cs.school_code = ds.school_code
+
+)
+
+select * from final
+  );
+[0m22:59:06.709393 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "demo.ccer_schools" does not exist
+LINE 25:     from        demo.ccer_schools cs
+                         ^
+
+[0m22:59:06.709459 [debug] [Thread-1  ]: On model.ccer_demo.schools: ROLLBACK
+[0m22:59:06.709610 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:59:06.709676 [debug] [Thread-1  ]: On model.ccer_demo.schools: Close
+[0m22:59:06.709926 [debug] [Thread-1  ]: Database Error in model schools (models/schools.sql)
+  relation "demo.ccer_schools" does not exist
+  LINE 25:     from        demo.ccer_schools cs
+                           ^
+  compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:59:06.710037 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd478a595-34ef-49db-ae5b-5114051a1d1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10433cd60>]}
+[0m22:59:06.710190 [error] [Thread-1  ]: 2 of 2 ERROR creating sql view model demo.schools .............................. [[31mERROR[0m in 0.01s]
+[0m22:59:06.710357 [debug] [Thread-1  ]: Finished running node model.ccer_demo.schools
+[0m22:59:06.710944 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m22:59:06.711027 [debug] [MainThread]: Using postgres connection "master"
+[0m22:59:06.711085 [debug] [MainThread]: On master: BEGIN
+[0m22:59:06.711138 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:59:06.713878 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m22:59:06.713950 [debug] [MainThread]: On master: COMMIT
+[0m22:59:06.714008 [debug] [MainThread]: Using postgres connection "master"
+[0m22:59:06.714060 [debug] [MainThread]: On master: COMMIT
+[0m22:59:06.714173 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m22:59:06.714232 [debug] [MainThread]: On master: Close
+[0m22:59:06.714473 [info ] [MainThread]: 
+[0m22:59:06.714592 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.11 seconds (0.11s).
+[0m22:59:06.714694 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:59:06.714748 [debug] [MainThread]: Connection 'model.ccer_demo.schools' was properly closed.
+[0m22:59:06.718216 [info ] [MainThread]: 
+[0m22:59:06.718385 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m22:59:06.718505 [info ] [MainThread]: 
+[0m22:59:06.718601 [error] [MainThread]: [33mDatabase Error in model ccer_schools (models/staging/ccer_schools.sql)[0m
+[0m22:59:06.718696 [error] [MainThread]:   relation "raw_school_list" does not exist
+[0m22:59:06.718784 [error] [MainThread]:   LINE 5: from    raw_school_list
+[0m22:59:06.718871 [error] [MainThread]:                   ^
+[0m22:59:06.718958 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/staging/ccer_schools.sql
+[0m22:59:06.719046 [info ] [MainThread]: 
+[0m22:59:06.719136 [error] [MainThread]: [33mDatabase Error in model schools (models/schools.sql)[0m
+[0m22:59:06.719223 [error] [MainThread]:   relation "demo.ccer_schools" does not exist
+[0m22:59:06.719310 [error] [MainThread]:   LINE 25:     from        demo.ccer_schools cs
+[0m22:59:06.719396 [error] [MainThread]:                            ^
+[0m22:59:06.719481 [error] [MainThread]:   compiled Code at target/run/ccer_demo/models/schools.sql
+[0m22:59:06.719571 [info ] [MainThread]: 
+[0m22:59:06.719664 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m22:59:06.719828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10433cf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041d6a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042b18b0>]}
+[0m22:59:06.720006 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,8 @@
+version: 2
+
+models:
+
+  - name: ccer_schools
+    description: ccer school list
+
+  - name: dim_schools
